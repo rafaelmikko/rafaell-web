@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rafael - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .whatsapp-btn {
+            background-color: #25D366; /* Warna hijau WhatsApp */
+            color: rgb(205, 200, 200);
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E; /* Warna hijau WhatsApp saat hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#pesan">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hallo, perkenalkan nama saya Rafael Mikko W.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya <i>Pelajar SMA kelas XII di SMAN 1 Cirebon yang memiliki sifat pekerja keras dan mandiri. Mampu mengoperasikan komputer dengan lancar, termasuk Powerpoint, Excel, dan Office. Mahir menggunakan Canva dan CorelDraw untuk pengeditan gambar. Tertarik melamar pekerjaan part time dengan waktu kerja di luar jam sekolah.</i></p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>tidur</li>
+            <li>makan</li>
+            <li>makan lagi</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>membuat website aplikasi top up/cv</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>mengembangkan kembali aplikasi yang sebelumnya pernah saya buat.</p>
+        </div>
+    </section>
+
+    <section id="pesan">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <!-- Tautan ke WhatsApp -->
+        <a href="https://wa.me/6289638290040" class="whatsapp-btn" target="_blank">
+            Chat di WhatsApp
+        </a>
+        <p><a href="belum tersedia" target="_blank">Lihat Aplikasi Web </a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("service_x9dzuus"); // service_x9dzuus
+        })();
+    </script>
+</body>
+</html>
